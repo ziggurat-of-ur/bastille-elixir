@@ -3,6 +3,8 @@ LIMITS memoryuse 1G
 ARG domain=example.com
 ARG DB_HOST=postgres.local
 
-PKG elixir htop 
+PKG elixir htop inotify-tools
 
 CMD echo "setenv LANG en_US.UTF-8" >> ~/.cshrc
+CMD echo Y | mix local.hex
+CMD echo Y | mix archive.install hex phx_new
