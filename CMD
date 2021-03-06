@@ -1,2 +1,0 @@
-echo "setenv LANG en_US.UTF-8" >> ~/.cshrc
-mkdir ~/E
